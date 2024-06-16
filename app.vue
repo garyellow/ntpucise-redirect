@@ -1,9 +1,7 @@
 <template>
   <SpeedInsights />
   <NuxtRouteAnnouncer />
-  <div>
-    Test
-  </div>
+  <NuxtPage />
 </template>
 
 <script lang="ts" setup>
