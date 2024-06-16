@@ -8,5 +8,6 @@ export default defineNuxtConfig({
   plugins: [
     "~/plugins/analytics.client.ts",
   ],
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  modules: ["@element-plus/nuxt", "@nuxtjs/seo"]
 })
