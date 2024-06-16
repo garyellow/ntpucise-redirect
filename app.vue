@@ -26,6 +26,7 @@ useSeoMeta({
   ogImageType: "image/png",
   ogImageAlt: "國立臺北大學資訊工程學系的標誌",
   ogLocale: "zh_TW",
+  ogSiteName: "國立臺北大學資訊工程學系",
   twitterSite: baseUrl,
   twitterTitle: "國立臺北大學資訊工程學系",
   twitterDescription:
