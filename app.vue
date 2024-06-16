@@ -36,7 +36,7 @@ useSeoMeta({
   author: "https://github.com/garyellow",
   creator: "https://github.com/garyellow",
   publisher: "https://github.com/garyellow",
-  googleSiteVerification: "null",
+  googleSiteVerification: "v6QOluTEgbD2ScFJ8buIXMVrKmG9ZCZWmxBKIuPYjc8",
 });
 
 useHead({
