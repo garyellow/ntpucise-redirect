@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     "~/plugins/analytics.client.ts",
   ],
   devtools: { enabled: true },
-  modules: ["@element-plus/nuxt", "@nuxtjs/seo"],
+  modules: ["@element-plus/nuxt", "@nuxtjs/seo", "@nuxtjs/tailwindcss"],
   site: {
     url: process.env.NUXT_PUBLIC_BASE_URL,
     name: "國立臺北大學資訊工程學系",
