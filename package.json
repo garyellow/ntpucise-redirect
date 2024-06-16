@@ -19,8 +19,12 @@
     "vue-router": "^4.3.3"
   },
   "trustedDependencies": [
+    "@fortawesome/fontawesome-common-types",
+    "@fortawesome/free-regular-svg-icons",
+    "@fortawesome/free-solid-svg-icons",
     "@vercel/speed-insights",
     "esbuild",
+    "json-editor-vue",
     "vue-demi"
   ]
 }
