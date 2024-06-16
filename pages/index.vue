@@ -44,15 +44,36 @@
         justify="center"
         class="h-1/3 justify-center"
       >
+        <ElText
+          size="small"
+          type="info"
+          class="text-balance text-center"
+        >
+          由於國立臺北大學資訊工程學系的官方網站在 SEO
+          優化方面存在問題，導致無法通過 Google
+          搜尋到相關資訊。因此，我們建立了這個臨時網站，旨在幫助改善
+          SEO，並將訪客自動重定向到國立臺北大學資訊工程學系的真正官網。在那裡，您將會找到最新的系所資訊、課程介紹、師資陣容及研究成果。感謝您的理解與支持。
+        </ElText>
+        <ElDivider class="!w-[25dvw]" />
         <ElButton
           type="primary"
+          size="large"
+          round
+          plain
           tag="a"
           href="https://www.csie.ntpu.edu.tw/index.php"
           rel="noopener noreferrer"
+          class="hover:animate-pulse"
         >
-          北大資工官網
+          <span class="text-xl font-bold">北大資工官網</span>
         </ElButton>
-        <ElText>點擊上面的按鈕繼續</ElText>
+        <ElText
+          tag="b"
+          type="warning"
+          class="text-lg"
+        >
+          請點擊上面的按鈕繼續
+        </ElText>
       </ElSpace>
       <div class="h-1/3">
         <Adsbygoogle
