@@ -55,6 +55,11 @@
           SEO，並將訪客自動重定向到國立臺北大學資訊工程學系的真正官網。在那裡，您將會找到最新的系所資訊、課程介紹、師資陣容及研究成果。感謝您的理解與支持。
         </ElText>
         <ElDivider class="!w-[25dvw]" />
+        <img
+          src="/title.png"
+          alt="國立臺北大學資訊工程學系"
+        />
+        <ElDivider class="!w-[25dvw]" />
         <ElButton
           type="primary"
           size="large"
