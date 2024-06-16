@@ -20,7 +20,7 @@ useSeoMeta({
     "這是一個臨時的跳轉網站，用於重定向到國立臺北大學資訊工程學系的真正官網。請稍等，我們會自動將您帶到最新的系所資訊、課程介紹、師資陣容及研究成果。",
   ogType: "website",
   ogUrl: baseUrl,
-  ogImage: `${baseUrl}/logo.png`,
+  ogImage: `${baseUrl}/logo-sm.png`,
   ogImageType: "image/png",
   ogImageAlt: "國立臺北大學資訊工程學系的標誌",
   ogLocale: "zh_TW",
@@ -29,7 +29,7 @@ useSeoMeta({
   twitterTitle: "國立臺北大學資訊工程學系",
   twitterDescription:
     "這是一個臨時的跳轉網站，用於重定向到國立臺北大學資訊工程學系的真正官網。請稍等，我們會自動將您帶到最新的系所資訊、課程介紹、師資陣容及研究成果。",
-  twitterImage: `${baseUrl}/logo.png`,
+  twitterImage: `${baseUrl}/logo-sm.png`,
   twitterImageAlt: "國立臺北大學資訊工程學系的標誌",
   twitterCard: "summary",
   author: "https://github.com/garyellow",
@@ -44,7 +44,7 @@ useHead({
   },
   link: [
     {
-      rel: "picture",
+      rel: "title",
       type: "image/png",
       href: "/logo.png",
     },
