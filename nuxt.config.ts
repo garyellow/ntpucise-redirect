@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      baseUrl: "http://localhost:3000"
+      vercelProjectProductionUrl: process.env.VERCEL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000"
     }
   },
   plugins: [

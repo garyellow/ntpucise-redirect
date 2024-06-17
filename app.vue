@@ -7,7 +7,7 @@
 <script lang="ts" setup>
 import { SpeedInsights } from "@vercel/speed-insights/vue";
 
-const baseUrl = useRuntimeConfig().public.baseUrl;
+const baseUrl = useRuntimeConfig().public.vercelProjectProductionUrl;
 
 useSeoMeta({
   viewport: "width=device-width, initial-scale=1.0",
