@@ -1,7 +1,10 @@
 <template>
-  <div class="flex h-dvh w-full">
-    <div class="flex w-1/3 flex-col justify-between">
-      <div class="h-1/3">
+  <div class="flex min-h-[120dvh] w-full justify-between">
+    <div
+      v-if="windowWidth >= 768"
+      class="flex w-1/5 flex-col justify-between"
+    >
+      <div class="h-[40dvh]">
         <Adsbygoogle
           ad-client="ca-pub-4345340552891469"
           ad-slot="9235145893"
@@ -10,7 +13,7 @@
           :ad-style="{ display: 'block' }"
         />
       </div>
-      <div class="h-1/3">
+      <div class="h-[40dvh]">
         <Adsbygoogle
           ad-client="ca-pub-4345340552891469"
           ad-slot="7538920847"
@@ -19,7 +22,7 @@
           :ad-style="{ display: 'block' }"
         />
       </div>
-      <div class="h-1/3">
+      <div class="h-[40dvh]">
         <Adsbygoogle
           ad-client="ca-pub-4345340552891469"
           ad-slot="4149506029"
@@ -29,8 +32,8 @@
         />
       </div>
     </div>
-    <div class="flex w-1/3 flex-col justify-between">
-      <div class="h-1/3">
+    <div class="flex w-full flex-col justify-between">
+      <div>
         <Adsbygoogle
           ad-client="ca-pub-4345340552891469"
           ad-slot="3599675837"
@@ -42,24 +45,31 @@
       <ElSpace
         direction="vertical"
         justify="center"
-        class="h-1/3 justify-center"
+        class="justify-center"
       >
-        <ElText
-          size="small"
-          type="info"
-          class="text-balance text-center"
-        >
-          由於國立臺北大學資訊工程學系的官方網站在 SEO
-          優化方面存在問題，導致無法通過 Google
-          搜尋到相關資訊。因此，我們建立了這個臨時網站，旨在幫助改善
-          SEO，並將訪客自動重定向到國立臺北大學資訊工程學系的真正官網。在那裡，您將會找到最新的系所資訊、課程介紹、師資陣容及研究成果。感謝您的理解與支持。
-        </ElText>
-        <ElDivider class="!w-[25dvw]" />
         <img
           src="/title.png"
           alt="國立臺北大學資訊工程學系"
+          class="w-[80dvw] md:w-[40dvw]"
         />
-        <ElDivider class="!w-[25dvw]" />
+        <ElDivider class="!w-[80dvw] md:!w-[50dvw]" />
+        <ElText class="text-balance text-center">
+          歡迎來到我們的網站！由於國立臺北大學資訊工程學系的官方網站在搜尋引擎中的
+          SEO
+          優化不足，可能導致您無法輕鬆搜尋到相關資訊。為了解決這個問題，我們特別建立了這個網站，讓您可以方便地通過內嵌框架（iframe）瀏覽北大資工系的內容，或是點擊下方按鈕直接前往官方網站。希望能幫助您更輕鬆地找到所需的資源和資訊。
+        </ElText>
+        <ElDivider class="!w-[80dvw] md:!w-[50dvw]" />
+        <div
+          class="p-2 md:rounded-xl md:border-4 md:border-dashed md:border-blue-300/75"
+        >
+          <iframe
+            src="https://www.csie.ntpu.edu.tw/index.php"
+            title="北大資工官網"
+            allow="fullscreen"
+            class="h-[90dvh] w-[95dvw] md:w-[60dvw]"
+          />
+        </div>
+        <ElDivider class="!w-[80dvw] md:!w-[50dvw]" />
         <ElButton
           type="primary"
           size="large"
@@ -77,10 +87,10 @@
           type="warning"
           class="text-lg"
         >
-          請點擊上面的按鈕繼續
+          點擊上面的按鈕直接前往官方網站
         </ElText>
       </ElSpace>
-      <div class="h-1/3">
+      <div>
         <Adsbygoogle
           ad-client="ca-pub-4345340552891469"
           ad-slot="8660430826"
@@ -90,8 +100,11 @@
         />
       </div>
     </div>
-    <div class="flex w-1/3 flex-col justify-between">
-      <div class="h-1/3">
+    <div
+      v-if="windowWidth >= 768"
+      class="flex w-1/5 flex-col justify-between"
+    >
+      <div class="h-[40dvh]">
         <Adsbygoogle
           ad-client="ca-pub-4345340552891469"
           ad-slot="8221447124"
@@ -100,7 +113,7 @@
           :ad-style="{ display: 'block' }"
         />
       </div>
-      <div class="h-1/3">
+      <div class="h-[40dvh]">
         <Adsbygoogle
           ad-client="ca-pub-4345340552891469"
           ad-slot="6908365451"
@@ -109,7 +122,7 @@
           :ad-style="{ display: 'block' }"
         />
       </div>
-      <div class="h-1/3">
+      <div class="h-[40dvh]">
         <Adsbygoogle
           ad-client="ca-pub-4345340552891469"
           ad-slot="9342957107"
@@ -122,4 +135,19 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const windowWidth = ref(0);
+
+const updateWindowWidth = () => {
+  windowWidth.value = window.innerWidth;
+};
+
+onMounted(() => {
+  updateWindowWidth();
+  window.addEventListener("resize", updateWindowWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", updateWindowWidth);
+});
+</script>
