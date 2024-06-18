@@ -53,10 +53,13 @@
           class="w-[80dvw] md:w-[40dvw]"
         />
         <ElDivider class="!w-[80dvw] md:!w-[50dvw]" />
-        <ElText class="text-balance text-center">
-          歡迎來到我們的網站！由於國立臺北大學資訊工程學系的官方網站在搜尋引擎中的
+        <ElText
+          tag="h1"
+          class="w-[95dvw] text-balance text-center md:w-[60dvw]"
+        >
+          歡迎來到我們的網站！由於國立臺北大學資訊工程學系的網站在搜尋引擎中的
           SEO
-          優化不足，可能導致您無法輕鬆搜尋到相關資訊。為了解決這個問題，我們特別建立了這個網站，讓您可以方便地通過內嵌框架（iframe）瀏覽北大資工系的內容，或是點擊下方按鈕直接前往官方網站。希望能幫助您更輕鬆地找到所需的資源和資訊。
+          優化不足，可能導致您無法輕鬆搜尋到相關資訊。為了解決這個問題，我們特別建立了這個網站，讓您可以方便地通過內嵌框架（iframe）瀏覽北大資工系系網的內容，或是點擊下方按鈕直接前往網站。希望能幫助您更輕鬆地找到所需的資源和資訊。
         </ElText>
         <ElDivider class="!w-[80dvw] md:!w-[50dvw]" />
         <div
@@ -77,18 +80,37 @@
           plain
           tag="a"
           href="https://www.csie.ntpu.edu.tw/index.php"
-          rel="noopener noreferrer"
-          class="hover:animate-pulse"
+          class="!border-2 !px-5 hover:animate-pulse"
         >
-          <span class="text-xl font-bold">北大資工官網</span>
+          <h2 class="text-2xl font-bold">北大資工系系網</h2>
         </ElButton>
         <ElText
-          tag="b"
+          tag="h2"
           type="warning"
-          class="text-lg"
+          size="large"
+          class="font-bold"
         >
-          點擊上面的按鈕直接前往官方網站
+          點擊上方按鈕直接前往網站
         </ElText>
+        <ElDivider class="!w-[80dvw] md:!w-[50dvw]" />
+        <div class="font-bold text-gray-500">
+          Made by
+          <NuxtLink
+            to="https://github.com/garyellow"
+            target="_blank"
+            class="font-bold text-black hover:underline"
+          >
+            garyellow
+          </NuxtLink>
+          |
+          <NuxtLink
+            to="https://github.com/garyellow/ntpucsie-redirect"
+            target="_blank"
+            class="font-bold text-black hover:underline"
+          >
+            Open Source
+          </NuxtLink>
+        </div>
       </ElSpace>
       <div>
         <Adsbygoogle
