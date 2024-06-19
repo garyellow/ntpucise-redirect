@@ -1,6 +1,14 @@
 <template>
   <SpeedInsights />
   <NuxtRouteAnnouncer />
+  <component
+    :is="'script'"
+    src="https://alwingulla.com/88/tag.min.js"
+    data-zone="73715"
+    async
+    data-cfasync="false"
+  >
+  </component>
   <NuxtPage />
 </template>
 
@@ -70,12 +78,6 @@ useHead({
       async: "true",
       "data-cfasync": "false",
       src: "//difficultywithhold.com/4bdfa196bc768bfc2c76cf9e542660c3/invoke.js",
-    },
-    {
-      type: "text/javascript",
-      "data-zone": "73715",
-      "data-cfasync": "false",
-      src: "https://alwingulla.com/88/tag.min.js",
     },
   ],
 });
