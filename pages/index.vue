@@ -16,7 +16,7 @@
         class="w-[95dvw] text-balance text-center md:w-[60dvw]"
       >
         歡迎來到我們的網站！由於國立臺北大學資訊工程學系的網站在搜尋引擎中的 SEO
-        優化不足，可能導致您無法輕鬆搜尋到相關資訊。為了解決這個問題，我們特別建立了這個網站，讓您可以方便地通過內嵌框架（iframe）瀏覽北大資工系系網的內容，或是點擊下方按鈕直接前往網站。希望能幫助您更輕鬆地找到所需的資源和資訊。
+        優化不足，可能導致您無法輕鬆搜尋到相關資訊。為了解決這個問題，我們特別建立了這個網站，讓您可以方便地通過內嵌框架（iframe）瀏覽北大資工系網站的內容，或是點擊下方的按鈕直接前往網站。我們希望這樣能幫助您更輕鬆地找到所需的資源和資訊。
       </ElText>
       <ElDivider class="!w-[80dvw] md:!w-[50dvw]" />
       <div
@@ -39,7 +39,7 @@
         href="https://www.csie.ntpu.edu.tw/index.php"
         class="!border-2 !px-5 hover:animate-pulse"
       >
-        <h2 class="text-2xl font-bold">北大資工系系網</h2>
+        <h2 class="text-2xl font-bold">NTPU CSIE</h2>
       </ElButton>
       <ElText
         tag="h2"
