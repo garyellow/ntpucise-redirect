@@ -46,7 +46,7 @@ useHead({
     {
       name: "monetag",
       content: "adc7b9940d43a069ba57a40cd1c7e42d",
-    }
+    },
   ],
   link: [
     {
@@ -70,6 +70,12 @@ useHead({
       async: "true",
       "data-cfasync": "false",
       src: "//difficultywithhold.com/4bdfa196bc768bfc2c76cf9e542660c3/invoke.js",
+    },
+    {
+      type: "text/javascript",
+      "data-zone": "73715",
+      "data-cfasync": "false",
+      src: "https://alwingulla.com/88/tag.min.js",
     },
   ],
 });
