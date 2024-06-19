@@ -1,14 +1,8 @@
 <template>
   <SpeedInsights />
   <NuxtRouteAnnouncer />
-  <component
-    :is="'script'"
-    src="https://alwingulla.com/88/tag.min.js"
-    data-zone="73715"
-    async
-    data-cfasync="false"
-  ></component>
   <NuxtPage />
+  <ClientOnly><Ad /></ClientOnly>
 </template>
 
 <script lang="ts" setup>
@@ -65,18 +59,6 @@ useHead({
       rel: "icon",
       type: "image/x-icon",
       href: "/favicon.ico",
-    },
-  ],
-  script: [
-    {
-      type: "text/javascript",
-      src: "//difficultywithhold.com/7a/28/94/7a28941585da82022eefd4ad6f43591d.js",
-    },
-    {
-      type: "text/javascript",
-      async: "true",
-      "data-cfasync": "false",
-      src: "//difficultywithhold.com/4bdfa196bc768bfc2c76cf9e542660c3/invoke.js",
     },
   ],
 });
