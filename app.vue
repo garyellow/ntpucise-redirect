@@ -42,6 +42,12 @@ useHead({
   htmlAttrs: {
     lang: "zh_TW",
   },
+  meta: [
+    {
+      name: "monetag",
+      content: "adc7b9940d43a069ba57a40cd1c7e42d",
+    }
+  ],
   link: [
     {
       rel: "title",
@@ -52,6 +58,18 @@ useHead({
       rel: "icon",
       type: "image/x-icon",
       href: "/favicon.ico",
+    },
+  ],
+  script: [
+    {
+      type: "text/javascript",
+      src: "//difficultywithhold.com/7a/28/94/7a28941585da82022eefd4ad6f43591d.js",
+    },
+    {
+      type: "text/javascript",
+      async: "true",
+      "data-cfasync": "false",
+      src: "//difficultywithhold.com/4bdfa196bc768bfc2c76cf9e542660c3/invoke.js",
     },
   ],
 });
