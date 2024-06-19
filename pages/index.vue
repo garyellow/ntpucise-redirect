@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-[120dvh] w-full justify-center">
+  <div class="my-24 flex min-h-[120dvh] w-full justify-center">
     <ElSpace
       direction="vertical"
       justify="center"

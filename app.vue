@@ -3,23 +3,11 @@
   <NuxtRouteAnnouncer />
   <component
     :is="'script'"
-    src="https://kukrosti.com/act/files/tag.min.js?z=7629780"
-    data-cfasync="false"
+    src="https://alwingulla.com/88/tag.min.js"
+    data-zone="73715"
     async
-  >
-  </component>
-  <component :is="'script'">
-    (function(d,z,s){s.src='https://'+d+'/400/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('foomaque.net',7629795,document.createElement('script'))
-  </component>
-  <component
-    :is="'script'"
-    async="async"
     data-cfasync="false"
-    src="//thubanoa.com/1?z=7629797"
   ></component>
-  <component :is="'script'">
-    (function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('aistekso.net',7629798,document.createElement('script'))
-  </component>
   <NuxtPage />
 </template>
 
