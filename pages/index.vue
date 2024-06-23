@@ -69,10 +69,10 @@
         </NuxtLink>
       </div>
       <ElDivider class="!w-[80dvw] md:!w-[50dvw]" />
-      <div class="flex flex-col items-center">
+      <!-- <div class="flex flex-col items-center">
         <ElText type="info">廣告</ElText>
         <div id="container-4bdfa196bc768bfc2c76cf9e542660c3"></div>
-      </div>
+      </div> -->
     </ElSpace>
   </div>
 </template>

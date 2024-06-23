@@ -2,7 +2,7 @@
   <SpeedInsights />
   <NuxtRouteAnnouncer />
   <NuxtPage />
-  <ClientOnly><Ad /></ClientOnly>
+  <!-- <ClientOnly><Ad /></ClientOnly> -->
 </template>
 
 <script lang="ts" setup>
